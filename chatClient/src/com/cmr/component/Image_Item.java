@@ -58,6 +58,8 @@ public class Image_Item extends javax.swing.JLayeredPane {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
+        setLayer(pic, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
