@@ -3,9 +3,11 @@ package com.cmr.component;
 
 
 import com.cmr.swing.ScrollBar;
+import java.awt.Adjustable;
 import java.awt.Color;
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
 import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JScrollBar;
 import net.miginfocom.swing.MigLayout;
 
@@ -29,7 +31,7 @@ public class Chat_Body extends javax.swing.JPanel {
 //
 //        addItemRight("hello\nerererew\newewe", new ImageIcon(getClass().getResource("/com/cmr/icon/test/avatar.jpg")));
 //        addItemLeft("Hello this is my friend", "Jonh", new ImageIcon(getClass().getResource("/com/cmr/icon/test/dog.jpg")), new ImageIcon(getClass().getResource("/com/cmr/icon/test/dog.jpg")));
-//        addItemRight("Ok\nWhat is he name ?");
+        addItemRight("Ok\nWhat is he name ?");
 //        addItemLeft("", "Ro", new ImageIcon(getClass().getResource("/com/cmr/icon/test/avatar.jpg")));
 //        addItemFile("", "Dara", "my doc.pdf", "1 MB");
 //        addItemFileRight("", "myfile.rar", "15 MB");
@@ -84,6 +86,8 @@ public class Chat_Body extends javax.swing.JPanel {
         //  ::80% set max with 80%
         body.repaint();
         body.revalidate();
+        item.setTime();
+        scrollToBottom();
     }
     
     public void addItemFileRight(String text, String fileName, String fileSize) {
@@ -139,7 +143,18 @@ public class Chat_Body extends javax.swing.JPanel {
             .addComponent(sp)
         );
     }// </editor-fold>//GEN-END:initComponents
-
+    private void scrollToBottom() {
+        JScrollBar verticalBar = sp.getVerticalScrollBar();
+        AdjustmentListener downScroller = new AdjustmentListener() {
+            @Override
+            public void adjustmentValueChanged(AdjustmentEvent e) {
+                Adjustable adjustable = e.getAdjustable();
+                adjustable.setValue(adjustable.getMaximum());
+                verticalBar.removeAdjustmentListener(this);
+            }
+        };
+        verticalBar.addAdjustmentListener(downScroller);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel body;

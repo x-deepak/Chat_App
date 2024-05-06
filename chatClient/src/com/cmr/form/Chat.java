@@ -4,6 +4,8 @@ package com.cmr.form;
 import com.cmr.component.Chat_Body;
 import com.cmr.component.Chat_Bottom;
 import com.cmr.component.Chat_Title;
+import com.cmr.event.EventChat;
+import com.cmr.event.PublicEvent;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -20,13 +22,19 @@ public class Chat extends javax.swing.JPanel {
         init();
     }
     private void init(){
-        setLayout(new MigLayout("fillx", "0[fill]0",""));
+        setLayout(new MigLayout("fillx", "0[fill]0", "0[]0[100%, bottom]0[shrink 0]0"));
         Chat_Title chatTitle =new Chat_Title();
         Chat_Body chatBody = new Chat_Body();
         Chat_Bottom chatBottom = new Chat_Bottom();
+        PublicEvent.getInstance().addEventChat(new EventChat() {
+            @Override
+            public void sendMessage(String text) {
+                chatBody.addItemRight(text);
+            }
+        });
         add(chatTitle, "wrap");
         add(chatBody,"wrap");
-        add(chatBottom);
+        add(chatBottom, "h ::50%");
     }
 
 

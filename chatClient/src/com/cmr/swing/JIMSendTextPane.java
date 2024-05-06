@@ -1,7 +1,6 @@
 
 package com.cmr.swing;
 
-
 import java.awt.Color;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
@@ -20,10 +19,7 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledEditorKit;
 import javax.swing.text.View;
 import javax.swing.text.ViewFactory;
-/**
- *
- * @author Deepak
- */
+
 public class JIMSendTextPane extends JTextPane {
 
     public String getHintText() {
@@ -48,7 +44,6 @@ public class JIMSendTextPane extends JTextPane {
 
     private class WarpColumnFactory implements ViewFactory {
 
-        @Override
         public View create(Element elem) {
             String kind = elem.getName();
             if (kind != null) {
