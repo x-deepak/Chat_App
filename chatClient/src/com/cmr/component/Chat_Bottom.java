@@ -15,6 +15,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -28,7 +29,7 @@ public class Chat_Bottom extends javax.swing.JPanel {
         init();
     }
     private void init(){
-        setLayout(new MigLayout("fillx, filly","0[]0","2[fill]2"));
+        setLayout(new MigLayout("fillx, filly", "0[fill]0[]0[]2", "2[fill]2"));
         JScrollPane scroll = new JScrollPane();
         scroll.setBorder(null);
         JIMSendTextPane txt = new JIMSendTextPane();
@@ -38,9 +39,11 @@ public class Chat_Bottom extends javax.swing.JPanel {
                 refresh();
             }
         });
+        txt.setBorder(new EmptyBorder(5, 5, 5, 5));
         txt.setHintText("Write Message Here ...");
         scroll.setViewportView(txt);
         ScrollBar sb = new ScrollBar();
+        sb.setBackground(new Color(242,242,242));
         sb.setPreferredSize(new Dimension(2, 10));
         scroll.setVerticalScrollBar(sb);
         add(sb);
