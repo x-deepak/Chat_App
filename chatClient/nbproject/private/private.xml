@@ -3,13 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/cmr/form/Home.java</file>
-            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/cmr/component/Chat_Title.java</file>
-            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/cmr/component/Chat_Bottom.java</file>
-            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/cmr/component/Chat_Body.java</file>
-            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/cmr/component/Chat_Item.java</file>
-            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/cmr/event/PublicEvent.java</file>
-            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/cmr/form/Chat.java</file>
+            <file>file:/C:/Users/Deepak/Documents/NetBeansProjects/chatClient/src/com/deepak/service/Service.java</file>
+            <file>file:/C:/Users/Deepak/Documents/NetBeansProjects/chatClient/src/com/deepak/emoji/Emogi.java</file>
+            <file>file:/C:/Users/Deepak/Documents/NetBeansProjects/chatClient/src/com/deepak/emoji/Model_Emoji.java</file>
+            <file>file:/C:/Users/Deepak/Documents/NetBeansProjects/chatClient/src/com/deepak/component/Panel_More.java</file>
         </group>
     </open-files>
 </project-private>
