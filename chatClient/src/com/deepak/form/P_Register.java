@@ -108,7 +108,7 @@ public class P_Register extends javax.swing.JPanel {
                 .addComponent(cmdBackLogin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbError)
-                .addGap(0, 9, Short.MAX_VALUE))
+                .addGap(0, 50, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
