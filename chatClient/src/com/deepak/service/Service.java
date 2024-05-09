@@ -22,7 +22,7 @@ public class Service {
     private Socket client;
     private final int PORT_NUMBER = 9999;
     private final String IP = "localhost";
-//    private final String IP = "192.168.0.100";
+//    private final String IP = "192.168.177.81";
     private Model_User_Account user;
     private List<Model_File_Sender> fileSender;
     private List<Model_File_Receiver> fileReceiver;

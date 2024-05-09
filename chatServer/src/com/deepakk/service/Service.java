@@ -69,7 +69,7 @@ public class Service {
                 Model_Message message = serviceUser.register(t);
                 ar.sendAckData(message.isAction(), message.getMessage(), message.getData());
                 if (message.isAction()) {
-                    textArea.append("User has Register :" + t.getUserName() + " Pass :" + t.getPassword() + "\n");
+                    textArea.append("New User registerd,  Username: " + t.getUserName() + " Pass : " + t.getPassword() + "\n");
                     server.getBroadcastOperations().sendEvent("list_user", (Model_User_Account) message.getData());
                     addClient(sioc, (Model_User_Account) message.getData());
                 }
@@ -157,7 +157,7 @@ public class Service {
             }
         });
         server.start();
-        textArea.append("Server has Start on port : " + PORT_NUMBER + "\n");
+        textArea.append("Server started on port : " + PORT_NUMBER + "\n");
     }
     
     private void userConnect(int userID) {

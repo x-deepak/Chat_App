@@ -3,8 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/deepak/form/Login.java</file>
+            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/deepak/event/EventMessage.java</file>
             <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/deepak/form/P_Register.java</file>
+            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/deepak/form/Home.java</file>
+            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/deepak/component/Chat_Body.java</file>
+            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/deepak/event/PublicEvent.java</file>
+            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/deepak/service/Service.java</file>
+            <file>file:/C:/CODING/Swing%20Project%20with%20Git/chatClient/src/com/deepak/form/Chat.java</file>
         </group>
     </open-files>
 </project-private>
